@@ -1,0 +1,98 @@
+######2023-04-25######
+#######0.04.007#######
+######FLASH INFO######
+BIN file: ESP_Easy_mega_20230425_custom_ESP32_4M316k_PSRAM.bin
+COM port: (COM4) USB-Enhanced-SERIAL CH9102 (Port_#0004.Hub_#0003)
+Baud rate: 115200
+######POST FLASH######
+No post flash information entered...
+######FLASH LOG######
+[esptool.exe -vv -cd nodemcu -cb 115200 -cp COM4 -ca 0x00000 -cf "C:\Users\ZAG\Downloads\!_ESP32_!\Sourche\ESPEasy-mega-20230409\dist\bin\ESP_Easy_mega_20230425_custom_ESP32_4M316k_PSRAM.bin"]
+[25.04.2023 10:15:50] esptool v0.4.12 - (c) 2014 Ch. Klippel <ck@atelier-klippel.de>
+[25.04.2023 10:15:50] 	setting board to nodemcu
+[25.04.2023 10:15:50] 	setting baudrate from 115200 to 115200
+[25.04.2023 10:15:50] 	setting port from  to COM4
+[25.04.2023 10:15:50] 	setting address from 0x00000000 to 0x00000000
+[25.04.2023 10:15:50] 	espcomm_upload_file
+[25.04.2023 10:15:50] 	espcomm_upload_mem
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] opening bootloader
+[25.04.2023 10:15:50] resetting board
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	read 0, requested 1
+[25.04.2023 10:15:50] resetting board
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] resetting board
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	serialport_receive_C0: 65 instead of C0
+[25.04.2023 10:15:50] trying to connect
+[25.04.2023 10:15:50] 	flush start
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1 ms
+[25.04.2023 10:15:50] 	setting serial port timeouts to 1000 ms
+[25.04.2023 10:15:50] 	flush complete
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command header
+[25.04.2023 10:15:50] 	espcomm_send_command: sending command payload
+[25.04.2023 10:15:50] 	read 0, requested 1
+[25.04.2023 10:15:50] warning: espcomm_sync failed
+[25.04.2023 10:15:50] error: espcomm_open failed
+[25.04.2023 10:15:50] error: espcomm_upload_mem failed
+[2023-04-25 10:15:51] STOPPED due to 2 errors! (try reset on the unit, then start a new flash attempt)
