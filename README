@@ -1,4 +1,10 @@
+Мой форк ESPeasy-mega с поддержкой чипов ESP32 C3/S3.
+Измененна логика отображения и выбора GPIO, отображение занятых GPIO в задачах...
+Восстановлена поддержка многозадачночти. 
+В планах добавить поддержку Bluetooth LE P2P, и возможно со временем модули Bouffalo на чипах BL602.
+
+
 My ESPeasy-mega fork with support for ESP32 C3/S3 chips.
 Changed the logic of displaying and selecting GPIOs, displaying busy GPIOs in tasks...
 Restored support for multitasking.
-There are plans to add support for Bluetooth LE P2P, and possibly Buffalo modules on BL602 chips.
+There are plans to add support for Bluetooth LE P2P, and perhaps over time, Bouffalo modules on BL602 chips.
