@@ -23,9 +23,10 @@ static int receivePin0 = -1;
 static int transmitPin0 = -1;
 static int receivePin1 = -1;
 static int transmitPin1 = -1;
+#if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
 static int receivePin2 = -1;
 static int transmitPin2 = -1;
-
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
 bool pinsChanged(ESPEasySerialPort port, 
                  int receivePin, 
                  int transmitPin) 
@@ -35,7 +36,7 @@ bool pinsChanged(ESPEasySerialPort port,
     case  ESPEasySerialPort::serial1: return receivePin != receivePin1 || transmitPin != transmitPin1;
 #if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     case  ESPEasySerialPort::serial2: return receivePin != receivePin2 || transmitPin != transmitPin2;
-#endif
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     default:  
       // No other hardware serial ports
       break;
@@ -62,8 +63,7 @@ void setPinsCache(ESPEasySerialPort port,
       receivePin2  = receivePin;
       transmitPin2 = transmitPin;
       break;
-
-    #endif
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     default:  
       // No other hardware serial ports
       break;
@@ -85,7 +85,7 @@ ESPeasySerial::ESPeasySerial(
     case  ESPEasySerialPort::serial1:
 #if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     case  ESPEasySerialPort::serial2:
-#endif
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
       _serialtype = port;
       break;
     default:
@@ -201,7 +201,7 @@ const HardwareSerial * ESPeasySerial::getHW() const {
 #if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     case ESPEasySerialPort::serial2: 
       return &Serial2;
-#endif
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     default: break;
   }
   return nullptr;
@@ -215,9 +215,9 @@ bool ESPeasySerial::isValid() const {
     case ESPEasySerialPort::serial2:
 #if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
       return true;
-#else
+#else // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
       return false;
-#endif
+#endif // if defined(CONFIG_IDF_TARGET_ESP32) || defined(CONFIG_IDF_TARGET_ESP32S3)
     case ESPEasySerialPort::sc16is752:
     #ifndef DISABLE_SC16IS752_Serial
       return _i2cserial != nullptr;
